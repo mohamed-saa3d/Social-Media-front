@@ -1,0 +1,2 @@
+// App shell layout placeholder
+
