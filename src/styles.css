@@ -1,0 +1,173 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import "@fontsource/sora/400.css";
+@import "@fontsource/sora/600.css";
+@import "@fontsource/sora/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Light — premium matte lavender */
+:root {
+  --radius: 0.875rem;
+
+  --background: #fbf9fb;
+  --foreground: #261a28;
+  --card: #ffffff;
+  --card-foreground: #261a28;
+  --popover: #ffffff;
+  --popover-foreground: #261a28;
+
+  --primary: #b696bb;
+  --primary-foreground: #1a111b;
+
+  --secondary: #f1eaf2;
+  --secondary-foreground: #261a28;
+
+  --muted: #f1eaf2;
+  --muted-foreground: #6b5a6e;
+
+  --accent: #ead8ee;
+  --accent-foreground: #261a28;
+
+  --destructive: #c44569;
+  --destructive-foreground: #ffffff;
+
+  --border: #ece3ee;
+  --input: #ece3ee;
+  --ring: #b696bb;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #261a28;
+  --sidebar-primary: #b696bb;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f1eaf2;
+  --sidebar-accent-foreground: #261a28;
+  --sidebar-border: #ece3ee;
+  --sidebar-ring: #b696bb;
+}
+
+/* Dark — cyber-grunge eggplant */
+.dark {
+  --background: #0d080e;
+  --foreground: #eae5ea;
+  --card: #1a111b;
+  --card-foreground: #eae5ea;
+  --popover: #1a111b;
+  --popover-foreground: #eae5ea;
+
+  --primary: #c8a8cd;
+  --primary-foreground: #1a111b;
+
+  --secondary: #241823;
+  --secondary-foreground: #eae5ea;
+
+  --muted: #1f1620;
+  --muted-foreground: #9b8ba0;
+
+  --accent: #2a1d2c;
+  --accent-foreground: #eae5ea;
+
+  --destructive: #e26d8a;
+  --destructive-foreground: #1a111b;
+
+  --border: rgba(200, 168, 205, 0.12);
+  --input: rgba(200, 168, 205, 0.18);
+  --ring: #c8a8cd;
+
+  --sidebar: #14101a;
+  --sidebar-foreground: #eae5ea;
+  --sidebar-primary: #c8a8cd;
+  --sidebar-primary-foreground: #1a111b;
+  --sidebar-accent: #241823;
+  --sidebar-accent-foreground: #eae5ea;
+  --sidebar-border: rgba(200, 168, 205, 0.12);
+  --sidebar-ring: #c8a8cd;
+}
+
+@utility glow {
+  box-shadow: 0 0 15px rgba(200, 168, 205, 0.5);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 18px rgba(200, 168, 205, 0.55);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Ambient lavender aurora used by auth/feed pages */
+.bg-aurora {
+  background:
+    radial-gradient(60% 50% at 20% 10%, rgba(200, 168, 205, 0.25), transparent 60%),
+    radial-gradient(50% 40% at 80% 0%, rgba(182, 150, 187, 0.22), transparent 60%),
+    radial-gradient(40% 35% at 50% 100%, rgba(200, 168, 205, 0.18), transparent 60%);
+}
+.dark .bg-aurora {
+  background:
+    radial-gradient(60% 50% at 20% 10%, rgba(200, 168, 205, 0.18), transparent 60%),
+    radial-gradient(50% 40% at 80% 0%, rgba(120, 80, 130, 0.22), transparent 60%),
+    radial-gradient(40% 35% at 50% 100%, rgba(200, 168, 205, 0.12), transparent 60%);
+}
+
+.glass {
+  background: color-mix(in oklab, var(--card) 70%, transparent);
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid var(--border);
+}

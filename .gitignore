@@ -1,0 +1,114 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build Output
+# =========================
+dist/
+dist-ssr/
+build/
+.output/
+.vinxi/
+.nitro/
+.tanstack/
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Environment Files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Local Config
+# =========================
+*.local
+
+# =========================
+# Bun
+# =========================
+.bun/
+
+# =========================
+# Cloudflare / Wrangler
+# =========================
+.wrangler/
+.dev.vars
+
+# =========================
+# Coverage & Testing
+# =========================
+coverage/
+.nyc_output/
+
+# Vitest
+vitest-results/
+test-results/
+
+# Playwright
+playwright-report/
+
+# =========================
+# Cache
+# =========================
+.cache/
+.parcel-cache/
+.eslintcache
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# IDEs
+# =========================
+.vscode/*
+!.vscode/extensions.json
+
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Visual Studio
+# =========================
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# =========================
+# Swap Files
+# =========================
+*.sw?
+*~
+
+# =========================
+# Temporary Files
+# =========================
+tmp/
+temp/
+
+# =========================
+# Generated Reports
+# =========================
+report.html
+# --------------------------
