@@ -55,7 +55,7 @@ export function AuthPage() {
 
           {/* Form card */}
           <div className="mx-auto w-full max-w-md">
-            <div className="glass rounded-3xl p-7 shadow-xl">
+            <div className="glass rounded-3xl p-7">
               <div className="mb-6 flex items-center justify-between">
                 <div>
                   <h2 className="font-display text-2xl font-semibold">

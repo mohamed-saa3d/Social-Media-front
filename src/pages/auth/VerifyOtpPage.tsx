@@ -16,7 +16,7 @@ export function VerifyOtpPage() {
           <ArrowLeft className="h-4 w-4" /> Back
         </Link>
 
-        <div className="glass rounded-3xl p-7 shadow-xl">
+        <div className="glass rounded-3xl p-7">
           <div className="mb-6 flex items-center gap-3">
             <span className="grid h-11 w-11 place-items-center rounded-xl bg-primary text-primary-foreground dark:glow">
               <ShieldCheck className="h-5 w-5" />

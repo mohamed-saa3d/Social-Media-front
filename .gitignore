@@ -112,3 +112,8 @@ temp/
 # =========================
 report.html
 # --------------------------
+# =========================
+# AI & Generator Artifacts
+# =========================
+AGENTS.md
+src/lib/lovable-error-reporting.ts

@@ -49,90 +49,90 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* Light — premium matte lavender */
+/* Light — Premium Luxury Emerald & Gold */
 :root {
   --radius: 0.875rem;
 
-  --background: #fbf9fb;
-  --foreground: #261a28;
+  --background: #f4f5f2;
+    --foreground: #051111;
   --card: #ffffff;
-  --card-foreground: #261a28;
+  --card-foreground: #072f31;
   --popover: #ffffff;
-  --popover-foreground: #261a28;
+  --popover-foreground: #072f31;
 
-  --primary: #b696bb;
-  --primary-foreground: #1a111b;
+  --primary: #8c5414;
+    --primary-foreground: #f4f5f2;
 
-  --secondary: #f1eaf2;
-  --secondary-foreground: #261a28;
+  --secondary: #e4ce97;
+    --secondary-foreground: #1a3c44;
 
-  --muted: #f1eaf2;
-  --muted-foreground: #6b5a6e;
+  --muted: #7c949c;
+    --muted-foreground: #334c54;
 
-  --accent: #ead8ee;
-  --accent-foreground: #261a28;
+  --accent: #d09b4c;
+    --accent-foreground: #051111;
 
   --destructive: #c44569;
   --destructive-foreground: #ffffff;
 
-  --border: #ece3ee;
-  --input: #ece3ee;
-  --ring: #b696bb;
+  --border: #6c756e;
+    --input: #6c756e;
+    --ring: #8c5414;
 
-  --sidebar: #ffffff;
-  --sidebar-foreground: #261a28;
-  --sidebar-primary: #b696bb;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f1eaf2;
-  --sidebar-accent-foreground: #261a28;
-  --sidebar-border: #ece3ee;
-  --sidebar-ring: #b696bb;
+  --sidebar: #f4f5f2;
+    --sidebar-foreground: #051111;
+    --sidebar-primary: #8c5414;
+    --sidebar-primary-foreground: #f4f5f2;
+    --sidebar-accent: #e4ce97;
+    --sidebar-accent-foreground: #1a3c44;
+    --sidebar-border: #6c756e;
+    --sidebar-ring: #8c5414;
 }
 
-/* Dark — cyber-grunge eggplant */
+/* Dark — Premium Luxury Emerald & Gold */
 .dark {
-  --background: #0d080e;
-  --foreground: #eae5ea;
-  --card: #1a111b;
-  --card-foreground: #eae5ea;
-  --popover: #1a111b;
-  --popover-foreground: #eae5ea;
+  --background: #051111;
+    --foreground: #f4f5f2;
+    --card: #072f31;
+    --card-foreground: #f4f5f2;
+    --popover: #072f31;
+    --popover-foreground: #f4f5f2;
 
-  --primary: #c8a8cd;
-  --primary-foreground: #1a111b;
+  --primary: #d09b4c;
+    --primary-foreground: #051111;
 
-  --secondary: #241823;
-  --secondary-foreground: #eae5ea;
+  --secondary: #1a3c44;
+    --secondary-foreground: #e4ce97;
 
-  --muted: #1f1620;
-  --muted-foreground: #9b8ba0;
+  --muted: #204444;
+    --muted-foreground: #849c9d;
 
-  --accent: #2a1d2c;
-  --accent-foreground: #eae5ea;
+  --accent: #2e4b4b;
+    --accent-foreground: #fbd47b;
 
-  --destructive: #e26d8a;
-  --destructive-foreground: #1a111b;
+  --destructive: #c44569;
+    --destructive-foreground: #f4f5f2;
 
-  --border: rgba(200, 168, 205, 0.12);
-  --input: rgba(200, 168, 205, 0.18);
-  --ring: #c8a8cd;
+  --border: #3c5654;
+    --input: #3c5654;
+    --ring: #d09b4c;
 
-  --sidebar: #14101a;
-  --sidebar-foreground: #eae5ea;
-  --sidebar-primary: #c8a8cd;
-  --sidebar-primary-foreground: #1a111b;
-  --sidebar-accent: #241823;
-  --sidebar-accent-foreground: #eae5ea;
-  --sidebar-border: rgba(200, 168, 205, 0.12);
-  --sidebar-ring: #c8a8cd;
+  --sidebar: #051111;
+    --sidebar-foreground: #f4f5f2;
+    --sidebar-primary: #d09b4c;
+    --sidebar-primary-foreground: #051111;
+    --sidebar-accent: #2e4b4b;
+    --sidebar-accent-foreground: #fbd47b;
+    --sidebar-border: #3c5654;
+    --sidebar-ring: #d09b4c;
 }
 
 @utility glow {
-  box-shadow: 0 0 15px rgba(200, 168, 205, 0.5);
+  box-shadow: 0 0 8px rgba(208, 155, 76, 0.2);
 }
 
 @utility text-glow {
-  text-shadow: 0 0 18px rgba(200, 168, 205, 0.55);
+  text-shadow: 0 0 10px rgba(208, 155, 76, 0.25);
 }
 
 @layer base {
@@ -152,18 +152,18 @@
   }
 }
 
-/* Ambient lavender aurora used by auth/feed pages */
+/* Ambient emerald & gold aurora used by auth/feed pages */
 .bg-aurora {
   background:
-    radial-gradient(60% 50% at 20% 10%, rgba(200, 168, 205, 0.25), transparent 60%),
-    radial-gradient(50% 40% at 80% 0%, rgba(182, 150, 187, 0.22), transparent 60%),
-    radial-gradient(40% 35% at 50% 100%, rgba(200, 168, 205, 0.18), transparent 60%);
+    radial-gradient(60% 50% at 20% 10%, rgba(208, 155, 76, 0.12), transparent 60%),
+      radial-gradient(50% 40% at 80% 0%, rgba(228, 206, 151, 0.1), transparent 60%),
+      radial-gradient(40% 35% at 50% 100%, rgba(7, 47, 49, 0.08), transparent 60%);
 }
 .dark .bg-aurora {
   background:
-    radial-gradient(60% 50% at 20% 10%, rgba(200, 168, 205, 0.18), transparent 60%),
-    radial-gradient(50% 40% at 80% 0%, rgba(120, 80, 130, 0.22), transparent 60%),
-    radial-gradient(40% 35% at 50% 100%, rgba(200, 168, 205, 0.12), transparent 60%);
+    radial-gradient(60% 50% at 20% 10%, rgba(208, 155, 76, 0.08), transparent 60%),
+      radial-gradient(50% 40% at 80% 0%, rgba(251, 212, 123, 0.06), transparent 60%),
+      radial-gradient(40% 35% at 50% 100%, rgba(46, 75, 75, 0.08), transparent 60%);
 }
 
 .glass {
